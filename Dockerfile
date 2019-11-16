@@ -20,7 +20,7 @@ RUN mkdir -p SounDAC
 
 WORKDIR /opt/SounDAC
 
-RUN git clone https://github.com/soundac/SounDAC-Source.git --branch test-0.5.0
+RUN git clone https://github.com/soundac/SounDAC-Source.git --branch testnet
 WORKDIR /opt/SounDAC/SounDAC-Source
 RUN git submodule update --init --recursive
 
