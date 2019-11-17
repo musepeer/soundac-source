@@ -26,7 +26,7 @@ RUN git submodule update --init --recursive
 
 
 RUN cmake -DBOOST_ROOT="$BOOST_ROOT" -DCMAKE_BUILD_TYPE=Release .
-RUN make mused cli_wallet -j3
+RUN make mused cli_wallet
 
 RUN make install
 
