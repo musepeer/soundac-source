@@ -20,7 +20,7 @@ RUN mkdir -p SounDAC
 
 WORKDIR /opt/SounDAC
 
-RUN git clone -b test-0.6.0 https://github.com/polispay/polis.git
+RUN git clone -b test-0.6.0 https://github.com/soundac/SounDAC-Source.git
 WORKDIR /opt/SounDAC/SounDAC-Source
 RUN git submodule update --init --recursive
 
